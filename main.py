@@ -12,11 +12,7 @@ for i in range(len(numbers)):
     print(smallest)
     loan = numbers[i]
     numbers.remove(smallest)
-    print("removing1:", numbers)
     numbers.insert(smallest_position, loan)
-    print("inserting1:", numbers)
     numbers.remove(numbers[i])
-    print("removing2:", numbers)
     numbers.insert(i, smallest)
-    print("inserting2:", numbers)
     print(numbers)
